@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-623" y="-92"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing Page-->
         <scene sceneID="Dfl-tW-qja">
             <objects>
-                <viewController id="lP7-Ta-kw4" sceneMemberID="viewController">
+                <viewController id="lP7-Ta-kw4" customClass="LandingPage" customModule="CountryFactsLite2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mk5-v8-h4K"/>
                         <viewControllerLayoutGuide type="bottom" id="ngW-kX-ehP"/>

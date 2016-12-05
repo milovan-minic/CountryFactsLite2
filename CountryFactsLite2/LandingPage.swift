@@ -10,26 +10,30 @@ import UIKit
 
 class LandingPage: UIViewController {
 
+    var searchBar: UISearchController?
+    var searchText: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        createSearch()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension LandingPage {
+    func createSearch() {
+        searchBar = {
+            let sc = UISearchController(searchResultsController: nil)
+            
+            sc.searchBar.searchBarStyle = UISearchBarStyle.prominent
+            
+            self.navigationItem.titleView = sc.searchBar
+            
+            return sc
+        }()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

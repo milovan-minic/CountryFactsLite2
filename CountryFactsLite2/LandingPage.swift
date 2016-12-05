@@ -31,6 +31,9 @@ extension LandingPage {
             
             sc.searchBar.searchBarStyle = UISearchBarStyle.prominent
             
+            sc.hidesNavigationBarDuringPresentation = false
+            sc.dimsBackgroundDuringPresentation = false
+            
             self.navigationItem.titleView = sc.searchBar
             
             return sc
